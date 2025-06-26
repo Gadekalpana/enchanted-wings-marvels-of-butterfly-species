@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detection Result</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #e3f2fd;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2196f3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      margin-top: 40px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    img {
+      width: 300px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .result {
+      font-size: 20px;
+      margin-top: 20px;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+    .btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #1976d2;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Butterfly Detection Result</h1>
+</header>
+
+<div class="container">
+  <p class="result">Predicted Species: <span id="prediction">Monarch Butterfly</span></p>
+
+  <img src="output-image.jpg" alt="Detected Butterfly" id="outputImage"/>
+
+  <a href="input.html" class="btn">Try Another Image</a>
+</div>
+
+<footer>
+  <p>© 2025 Kalpana Gade | Butterfly Detection Project</p>
+</footer>
+
+</body>
+</html>
